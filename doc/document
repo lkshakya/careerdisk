@@ -1,0 +1,194 @@
+
+
+
+
+
+
+
+Phase -I
+
+ 
+Indian companies generally goes to univerties and colleges for recuritment purpose.
+It happens sometimes that executive do not have time to go for recruitment.
+If any companies looking for top 10 student from each college from all over india they calling 
+fresh graguate is very difficult
+So The objective to create a  eletronic campus where companies can invite to students from various colleges
+for recuritment in a single click. Student will also able to apply for recuritment to all companies
+it is only for fresher not for professional having exprience
+
+
+So there are various entities in system
+
+1. universities
+2. college  
+3. student
+4. companies
+5. job or campus event
+6. categories
+7. location (country state)
+I have designed few model but they are not accurate it
+
+Since university have many colleges and college run the various courses(for graguate student)
+Comanies have association with various sector like finance , manufacturing , service etc
+
+there are two section of this web application 
+
+1. front end (visible to all)
+2. Admin (visible to only admin)
+
+
+
+
+admin visible Model i.e creation/updation/deletion of these model data is password prodected
+
+  categoryMaster
+  courseMaster
+  universityMaster
+  collegeMaster
+  locationmaster
+    i.e creation /updation and deletion of record of these model is possible only 
+via admin
+
+
+front end visible mode;
+     
+
+
+categoryMaster
+  id
+  name
+  description
+  isActive
+ 
+
+courseMaster
+   courseId : PK
+   courseName: varchar (250) 
+   courseDescription:text 
+   timespan: integer
+   isActive     
+
+
+university_course
+  id 
+  courseId
+  universityId   
+
+
+university
+
+unversityId  : P.K.
+name: varchar(250) not null
+weburl:varchar(250)
+email: varchar(100)
+telephone: varchar(15)
+yearOfEstablish
+IPAddress: varchar(100)
+createDate:timestamp
+updateDate:timstamp
+isActive: char(1) Y,N
+
+
+
+
+
+college_course
+  id 
+  courseId
+  collegeId   
+
+
+
+College
+
+collegeId: Pk
+name:
+weburl
+address
+email
+stateId
+telephone
+yearOfEstablish
+IPAddress
+createDate
+updateDate
+isActive
+unversityId 
+
+
+Student:
+
+id
+fname
+lasname
+imagefile
+email
+telephone
+grade(Percentile)
+address
+collegeId
+courseId
+stateId
+yearofregistartion
+rankincourse
+rankincollege
+IPAddress
+createDate
+updateDate
+isActive
+portfolio: text
+
+employer
+ employerid
+ compnayname
+ noofemployee
+ stateId 
+ email
+ weburl
+ address
+ telephone
+ IPAddress
+ createDate
+ updateDate
+ isActive
+ 
+
+CompanyJob
+ id
+ jobId
+ companyId
+ noofActiveJob
+
+
+
+
+
+StateMaster
+  stateId
+  stateName
+
+
+
+
+locationMaster
+ id
+ locationname(cityname)
+  
+jobMaster
+    jobId
+    jobtitle
+    jobdescription
+    minSalary
+    maxSalary
+    isPermanent 
+    email
+    telephone
+    ispaid(Y/N)
+    catgoryId
+    IPaddress
+    createdDate
+    updateDate
+    isActive
+
+
+
