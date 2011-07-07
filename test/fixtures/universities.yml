@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  weburl: MyString
+  email: MyString
+  telephone: MyString
+  yearofest: 1
+  IPaddress: MyString
+  createDate: 2011-07-07 12:11:40
+  isActive: MyString
+
+two:
+  name: MyString
+  weburl: MyString
+  email: MyString
+  telephone: MyString
+  yearofest: 1
+  IPaddress: MyString
+  createDate: 2011-07-07 12:11:40
+  isActive: MyString

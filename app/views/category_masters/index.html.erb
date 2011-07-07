@@ -1,0 +1,27 @@
+<h1>Listing category_masters</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Isactive</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @category_masters.each do |category_master| %>
+  <tr>
+    <td><%= category_master.name %></td>
+    <td><%= category_master.description %></td>
+    <td><%= category_master.isActive %></td>
+    <td><%= link_to 'Show', category_master %></td>
+    <td><%= link_to 'Edit', edit_category_master_path(category_master) %></td>
+    <td><%= link_to 'Destroy', category_master, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Category master', new_category_master_path %>

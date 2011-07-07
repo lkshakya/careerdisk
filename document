@@ -1,0 +1,160 @@
+
+
+
+admin visible Model i.e creation/updation/deletion of these model data is password prodected
+
+  configMaster
+  categoryMaster
+  courseMaster
+  univerSityMaster
+  collegeMaster
+  locationmaster
+
+front end visible mode;
+  
+ 
+    
+
+
+ConfigMaster
+    
+
+categoryMaster
+  id
+  name
+  description
+  isActive
+ 
+
+courseMaster
+   courseId : PK
+   courseName: varchar (250) 
+   courseDescription:text 
+   timespan: integer
+   isActive     
+
+
+university_course
+  id 
+  courseId
+  universityId   
+
+
+university
+
+unversityId  : P.K.
+name: varchar(250) not null
+
+weburl:varchar(250)
+email: varchar(100)
+telephone: varchar(15)
+yearOfEstablish
+IPAddress: varchar(100)
+createDate:timestamp
+updateDate:timstamp
+isActive: char(1) Y,N
+
+
+
+
+
+college_course
+  id 
+  courseId
+  collegeId   
+
+
+
+College
+
+collegeId: Pk
+name:
+weburl
+address
+email
+stateId
+telephone
+yearOfEstablish
+IPAddress
+createDate
+updateDate
+isActive
+unversityId 
+
+
+Student:
+
+id
+fname
+lasname
+imagefile
+email
+telephone
+grade(Percentile)
+address
+collegeId
+courseId
+stateId
+yearofregistartion
+rankincourse
+rankincollege
+IPAddress
+createDate
+updateDate
+isActive
+portfolio: text
+
+employer
+ employerid
+ compnayname
+ noofemployee
+ stateId 
+ email
+ weburl
+ address
+ telephone
+ IPAddress
+ createDate
+ updateDate
+ isActive
+ 
+
+CompanyJob
+ id
+ jobId
+ companyId
+ noofActiveJob
+
+
+
+
+
+StateMaster
+  stateId
+  stateName
+
+
+
+
+locationMaster
+ id
+ locationname(cityname)
+  
+jobMaster
+    jobId
+    jobtitle
+    jobdescription
+    minSalary
+    maxSalary
+    isPermanent 
+    email
+    telephone
+    ispaid(Y/N)
+    catgoryId
+    IPaddress
+    createdDate
+    updateDate
+    isActive
+
+
+
